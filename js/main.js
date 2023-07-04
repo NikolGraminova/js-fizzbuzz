@@ -18,9 +18,15 @@ let nums = []
 
 for (let i = 1; i <= 100; i++) {
     nums.push(i);
-    console.log(i);
-    switch (nums) {
-        case i % 3=0 == 0 = "fizz"
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+    } else if (i % 5 == 0) {
+        console.log("Buzz")
+    } else if (i % 3 == 0) {
+        console.log("Fizz")
+    } else {
+        console.log(i);
     }
+
 }
 
