@@ -1,18 +1,19 @@
-.squareFizzBuzz {
-    background-color: rgb(74, 29, 116);
+.squareRegular {
+    background-color: #DBD5B5;
 }
 
 
 .squareFizz {
-    background-color: rgb(30, 25, 139);
+    background-color: #2B9EB3;
 }
+
 
 .squareBuzz {
-    background-color: rgb(166, 25, 25);
+    background-color: #F8333C;
 }
 
-.squareRegular {
-    background-color: rgb(29, 175, 26);
+.squareFizzBuzz {
+    background-color: #FCAB10;
 }
 
 .squareStyle {
@@ -20,4 +21,18 @@
     width: 150px;
     margin: 15px;
     border: 1px solid white;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: 25px;
+    font-weight: 700;
+
 }
+
+.body-style {
+    background-color: #44AF69;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: rgb(33, 31, 31);
+}
+
+5C0029
