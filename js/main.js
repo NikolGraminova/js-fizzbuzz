@@ -14,9 +14,8 @@ BONUS 2
 Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.*/
 
 
-let nums = []
-
-for (let i = 1; i <= 100; i++) {
+/*console print
+for (let i = 1; i <= userNums; i++) {
     nums.push(i);
     if (i % 3 == 0 && i % 5 == 0) {
         console.log("FizzBuzz");
@@ -27,27 +26,37 @@ for (let i = 1; i <= 100; i++) {
     } else {
         console.log(i);
     }
+}*/
+
+
+//html print
+function submitForm(event) {
+    event.preventDefault();
+    console.log("test")
+    let nums = []
+    let userNums = document.getElementById("inputNumbers").value;
+    for (let i = 1; i <= userNums; i++) {
+        nums.push(i);
+        if (i % 3 == 0 && i % 5 == 0) {
+            document.getElementById("squares").innerHTML += `
+                <p class="squareFizzBuzz squareStyle">FizzBuzz</p>
+            `
+        } else if (i % 5 == 0) {
+            document.getElementById("squares").innerHTML += `
+                <p class="squareFizz squareStyle">Buzz</p>
+            `
+        } else if (i % 3 == 0) {
+            document.getElementById("squares").innerHTML += `
+                <p class="squareBuzz squareStyle">Fizz</p>
+            `
+        } else {
+            document.getElementById("squares").innerHTML += `
+                <p class="squareRegular squareStyle">${i}</p>
+            `
+        }
+    }
 }
 
-for (let i = 1; i <= 100; i++) {
-    nums.push(i);
-    if (i % 3 == 0 && i % 5 == 0) {
-        document.getElementById("squares").innerHTML += `
-            <p class="squareFizzBuzz squareStyle">FizzBuzz</p>
-        `
-    } else if (i % 5 == 0) {
-        document.getElementById("squares").innerHTML += `
-            <p class="squareFizz squareStyle">Buzz</p>
-        `
-    } else if (i % 3 == 0) {
-        document.getElementById("squares").innerHTML += `
-            <p class="squareBuzz squareStyle">Fizz</p>
-        `
-    } else {
-        document.getElementById("squares").innerHTML += `
-            <p class="squareRegular squareStyle">${i}</p>
-        `
-
-    }
-
+function refreshWindow() {
+    location.reload();
 }

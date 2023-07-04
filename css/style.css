@@ -35,4 +35,12 @@
     color: rgb(33, 31, 31);
 }
 
-5C0029
+.btn-style {
+    background-color: #DBD5B5;
+    border-style: 1px, solid, white;
+}
+
+.userNumberStyle {
+    background-color: #DBD5B5;
+    border-style: 1px, solid, white;
+}
