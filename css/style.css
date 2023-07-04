@@ -1,0 +1,23 @@
+.squareFizzBuzz {
+    background-color: rgb(74, 29, 116);
+}
+
+
+.squareFizz {
+    background-color: rgb(30, 25, 139);
+}
+
+.squareBuzz {
+    background-color: rgb(166, 25, 25);
+}
+
+.squareRegular {
+    background-color: rgb(29, 175, 26);
+}
+
+.squareStyle {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    border: 1px solid white;
+}
