@@ -40,19 +40,19 @@ function submitForm(event) {
         if (i % 3 == 0 && i % 5 == 0) {
             document.getElementById("squares").innerHTML += `
                 <p class="squareFizzBuzz squareStyle">FizzBuzz</p>
-            `
+            `;
         } else if (i % 5 == 0) {
             document.getElementById("squares").innerHTML += `
                 <p class="squareFizz squareStyle">Buzz</p>
-            `
+            `;
         } else if (i % 3 == 0) {
             document.getElementById("squares").innerHTML += `
                 <p class="squareBuzz squareStyle">Fizz</p>
-            `
+            `;
         } else {
             document.getElementById("squares").innerHTML += `
                 <p class="squareRegular squareStyle">${i}</p>
-            `
+            `;
         }
     }
 }
